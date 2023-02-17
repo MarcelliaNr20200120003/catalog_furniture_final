@@ -1,0 +1,41 @@
+name: catalog_furniture_final
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  firebase_auth: ^4.2.2
+  firebase_core: ^2.5.0
+  google_fonts: ^4.0.3
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  ionicons: 0.2.2
+  carousel_slider: 4.2.1
+  flutter: 
+    sdk: flutter
+  cloud_firestore: ^4.4.0
+
+dev_dependencies: 
+  get_cli: ^1.8.1
+  flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+  assets:
+    - assets/images/Item_1.png
+    - assets/images/Item_2.png
+    - assets/images/Item_3.png
+    - assets/images/gambar1.jpeg
+    - assets/images/gambar2.jpeg
+    - assets/images/gambar3.jpg
+    - assets/images/gambar4.jpeg
+    - assets/images/gambar5.jpeg
+    - assets/icons/ff.jpg
+    - assets/icons/gg.jpg
+    - assets/icons/getstar.jpg
+    
+

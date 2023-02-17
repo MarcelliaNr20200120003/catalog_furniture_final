@@ -1,0 +1,1 @@
+export 'package:catalog_furniture_final/infrastructure/navigation/bindings/controllers/controller.controller.binding.dart'; 
