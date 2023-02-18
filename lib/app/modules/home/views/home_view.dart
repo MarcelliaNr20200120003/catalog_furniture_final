@@ -24,7 +24,7 @@ class HomeView extends State<Home> {
   @override
   Widget build(BuildContext context) {
     List<int> list = [1, 2, 3, 4, 5, 6];
-    return new MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         body: SafeArea(
           bottom: false,
@@ -42,14 +42,15 @@ class HomeView extends State<Home> {
                 ),
               ),
               CategoryList(),
+              // ignore: prefer_const_constructors
               SizedBox(height: 20.0 / 2),
               Expanded(
                 child: Stack(
                   children: <Widget>[
                     // Our background
                     Container(
-                      margin: EdgeInsets.only(top: 70),
-                      decoration: BoxDecoration(
+                      margin: const EdgeInsets.only(top: 70),
+                      decoration: const BoxDecoration(
                         color: Color.fromARGB(255, 185, 223, 114),
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(40),
@@ -98,9 +99,9 @@ final List<String> imgList = [
 final List<Widget> imageSliders = imgList
     .map((item) => Container(
           child: Container(
-            margin: EdgeInsets.all(5.0),
+            margin: const EdgeInsets.all(5.0),
             child: ClipRRect(
-                borderRadius: BorderRadius.all(Radius.circular(5.0)),
+                borderRadius: const BorderRadius.all(Radius.circular(5.0)),
                 child: Stack(
                   children: <Widget>[
                     Image.network(
@@ -113,7 +114,7 @@ final List<Widget> imageSliders = imgList
                       left: 0.0,
                       right: 0.0,
                       child: Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           gradient: LinearGradient(
                             colors: [
                               Color.fromARGB(200, 0, 0, 0),
@@ -123,11 +124,11 @@ final List<Widget> imageSliders = imgList
                             end: Alignment.topCenter,
                           ),
                         ),
-                        padding: EdgeInsets.symmetric(
+                        padding: const EdgeInsets.symmetric(
                             vertical: 10.0, horizontal: 20.0),
                         child: Text(
                           'No. ${imgList.indexOf(item)} image',
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.white,
                             fontSize: 20.0,
                             fontWeight: FontWeight.bold,
