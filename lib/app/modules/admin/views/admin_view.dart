@@ -16,12 +16,12 @@ class AdminView extends GetView<AdminController> {
       ),
       floatingActionButton: FloatingActionButton(
           onPressed: () => Get.toNamed(Routes.TAMBAH_CATALOG),
-          child: Icon(
+          child: const Icon(
             Icons.add,
             size: 36,
             color: Colors.white,
           )),
-      body: Center(
+      body: const Center(
         child: Text(
           'AdminView is working',
           style: TextStyle(fontSize: 20),
