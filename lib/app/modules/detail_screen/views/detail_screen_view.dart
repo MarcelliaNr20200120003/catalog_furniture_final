@@ -1,13 +1,12 @@
 import 'package:catalog_furniture_final/app/modules/home/views/home_view.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
 import 'package:ionicons/ionicons.dart';
-import 'package:catalog_furniture_final/app/modules/product_card/views/product_card_view.dart';
+
 // import 'package:catalog_furniture/constants.dart';
 import 'package:catalog_furniture_final/app/modules/product/views/product_view.dart';
 
 import '../../constants/views/constants_view.dart';
-import '../../tambah_catalog/views/tambah_catalog_view.dart';
 
 // import 'components/body.dart';
 
@@ -23,7 +22,7 @@ class DetailsScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: kBackgroundColor,
       appBar: buildAppBar(context),
-      body: Home(),
+      body: const Home(),
     );
   }
 
@@ -32,8 +31,8 @@ class DetailsScreen extends StatelessWidget {
       backgroundColor: kBackgroundColor,
       elevation: 0,
       leading: IconButton(
-        padding: EdgeInsets.only(left: kDefaultPadding),
-        icon: Icon(Ionicons.backspace),
+        padding: const EdgeInsets.only(left: kDefaultPadding),
+        icon: const Icon(Ionicons.backspace),
         onPressed: () {
           Navigator.pop(context);
         },
@@ -45,7 +44,7 @@ class DetailsScreen extends StatelessWidget {
       ),
       actions: <Widget>[
         IconButton(
-          icon: Icon(Ionicons.basket),
+          icon: const Icon(Ionicons.basket),
           onPressed: () {},
         ),
       ],
