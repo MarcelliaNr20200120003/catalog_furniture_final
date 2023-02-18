@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    MaterialApp(
+    const MaterialApp(
       debugShowCheckedModeBanner: false,
     );
     return StreamBuilder(
