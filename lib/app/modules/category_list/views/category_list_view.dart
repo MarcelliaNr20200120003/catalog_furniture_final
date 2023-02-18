@@ -16,7 +16,7 @@ class _CategoryListState extends State<CategoryList> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 20.0 / 2),
+      margin: const EdgeInsets.symmetric(vertical: 20.0 / 2),
       height: 30,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
@@ -34,7 +34,7 @@ class _CategoryListState extends State<CategoryList> {
               // At end item it add extra 20 right  padding
               right: index == categories.length - 1 ? 20.0 : 0,
             ),
-            padding: EdgeInsets.symmetric(horizontal: 20.0),
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
             decoration: BoxDecoration(
               color: index == selectedIndex
                   ? Colors.white.withOpacity(0.4)
@@ -43,7 +43,7 @@ class _CategoryListState extends State<CategoryList> {
             ),
             child: Text(
               categories[index],
-              style: TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.white),
             ),
           ),
         ),
