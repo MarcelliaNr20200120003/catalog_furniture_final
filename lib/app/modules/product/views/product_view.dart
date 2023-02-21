@@ -14,7 +14,7 @@ class Product {
 
 // list of products
 // for our demo
-List<Product> products = [
+List<Product> product = [
   Product(
     id: 1,
     price: 56,
