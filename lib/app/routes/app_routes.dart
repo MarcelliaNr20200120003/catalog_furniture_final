@@ -16,6 +16,8 @@ abstract class Routes {
   static const TAMBAH_CATALOG = _Paths.TAMBAH_CATALOG;
   static const DETAILS = _Paths.DETAILS;
   static const DESKRIPSI = _Paths.DESKRIPSI;
+  static const PRODUCTS = _Paths.PRODUCTS;
+  static const MYAPP = _Paths.MYAPP;
 }
 
 abstract class _Paths {
@@ -34,4 +36,6 @@ abstract class _Paths {
   static const TAMBAH_CATALOG = '/tambah-catalog';
   static const DETAILS = '/details';
   static const DESKRIPSI = '/deskripsi';
+  static const PRODUCTS = '/products';
+  static const MYAPP = '/hello';
 }
