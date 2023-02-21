@@ -1,3 +1,4 @@
+import 'package:catalog_furniture_final/app/controller/controllers/auth_controller_controller.dart';
 import 'package:catalog_furniture_final/app/modules/welcome/views/welcome_view.dart';
 import 'package:catalog_furniture_final/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
@@ -6,14 +7,8 @@ import 'package:get/get.dart';
 
 import '../controllers/login_controller.dart';
 
-class SignInScreen extends StatefulWidget {
-  const SignInScreen({Key? key}) : super(key: key);
-
-  @override
-  State<SignInScreen> createState() => _SignInScreenState();
-}
-
-class _SignInScreenState extends State<SignInScreen> {
+class SignInScreenState extends GetView<AuthControllerController> {
+  final authC = Get.find<AuthControllerController>();
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -100,7 +95,9 @@ class _SignInScreenState extends State<SignInScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      authC.signInWithGoogle();
+                    },
                     child: Container(
                         padding: const EdgeInsets.all(20),
                         decoration: BoxDecoration(
