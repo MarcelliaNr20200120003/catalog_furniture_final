@@ -1,3 +1,4 @@
+import 'package:catalog_furniture_final/app/modules/constants/bindings/constants_binding.dart';
 import 'package:get/get.dart';
 
 import '../../main.dart';
@@ -15,8 +16,6 @@ import '../modules/tambah_catalog/bindings/tambah_catalog_binding.dart';
 import '../modules/tambah_catalog/views/tambah_catalog_view.dart';
 import '../modules/welcome/bindings/welcome_binding.dart';
 import '../modules/welcome/views/welcome_view.dart';
-import 'package:catalog_furniture_final/app/modules/product/bindings/product_binding.dart';
-import 'package:catalog_furniture_final/app/modules/product/views/product_view.dart';
 
 part 'app_routes.dart';
 
@@ -30,18 +29,18 @@ class AppPages {
     GetPage(
       name: _Paths.HOME,
       page: () => Home(),
-      // product: Product(
+      // Product: Product(
       //     id: 1,
       //     price: 56,
       //     title: "Classic Leather Arm Chair",
       //     description:
       //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
-      //     image: "assets/images/Item_1.png")),
+      //     image: "assets/images/Item_1.png"),
       binding: HomeBinding(),
     ),
     GetPage(
       name: _Paths.LOGIN,
-      page: () => const SignInScreen(),
+      page: () => SignInScreenState(),
       binding: LoginBinding(),
     ),
     GetPage(
@@ -59,5 +58,10 @@ class AppPages {
       page: () => const TambahCatalogView(),
       binding: TambahCatalogBinding(),
     ),
+    // GetPage(
+    //   name: _Paths.MYAPP,
+    //   page: () => MyApp(),
+    //   // binding: TambahCatalogBinding(),
+    // ),
   ];
 }
