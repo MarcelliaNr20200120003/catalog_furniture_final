@@ -30,7 +30,7 @@ class WelcomeView extends GetView<WelcomeController> {
                   decoration: BoxDecoration(
                       color: Colors.amber,
                       borderRadius: BorderRadius.circular(30),
-                      image: DecorationImage(
+                      image: const DecorationImage(
                         fit: BoxFit.cover,
                         image: AssetImage("assets/icons/getstar.jpg"),
                       )),
@@ -41,7 +41,8 @@ class WelcomeView extends GetView<WelcomeController> {
                       child: Column(
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(top: 1, left: 29, right: 20),
+                        padding:
+                            const EdgeInsets.only(top: 1, left: 29, right: 20),
                         child: Text(
                           "Discover Your Own Dream House",
                           style: GoogleFonts.acme(
@@ -51,7 +52,8 @@ class WelcomeView extends GetView<WelcomeController> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(top: 50, left: 29, right: 20),
+                        padding:
+                            const EdgeInsets.only(top: 50, left: 29, right: 20),
                         child: Text(
                           "Make your home a minimalist look at an affordable price",
                           style: GoogleFonts.amethysta(
@@ -60,7 +62,7 @@ class WelcomeView extends GetView<WelcomeController> {
                           ),
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       ElevatedButton(
                         onPressed: () => Get.toNamed(Routes.LOGIN),
                         style: ElevatedButton.styleFrom(
@@ -68,7 +70,7 @@ class WelcomeView extends GetView<WelcomeController> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(40),
                           ),
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 30,
                             vertical: 22,
                           ),
