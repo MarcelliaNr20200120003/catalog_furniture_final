@@ -16,6 +16,7 @@ dependencies:
   flutter: 
     sdk: flutter
   cloud_firestore: ^4.4.0
+  google_sign_in: ^6.0.0
 
 dev_dependencies: 
   get_cli: ^1.8.1
