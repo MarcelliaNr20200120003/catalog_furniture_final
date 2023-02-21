@@ -31,6 +31,7 @@
 
   <title>catalog_furniture_final</title>
   <link rel="manifest" href="manifest.json">
+  <meta name="google-signin-client_id" content="1079836143933-bg4t17bbr55u8miau61ra2v8p1uvtpsf.apps.googleusercontent.com">
 
   <script>
     // The value below is injected by flutter build, do not touch.
@@ -40,6 +41,27 @@
   <script src="flutter.js" defer></script>
 </head>
 <body>
+  <script type="module">
+    // import { initializeApp } from "firebase/app";
+      // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCExBGFOExxi5fcXaRjJTrSXKgrnOS25fw",
+  authDomain: "catalog-final-cbd15.firebaseapp.com",
+  projectId: "catalog-final-cbd15",
+  storageBucket: "catalog-final-cbd15.appspot.com",
+  messagingSenderId: "60706620911",
+  appId: "1:60706620911:web:235141ba1c6f35bc9b621a"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+  </script>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
