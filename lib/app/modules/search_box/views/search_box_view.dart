@@ -22,7 +22,7 @@ class SearchBox extends GetView<SearchBoxController> {
         vertical: 20.0 / 9, // 5 top and bottom
       ),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.4),
+        color: Color.fromARGB(255, 209, 173, 173).withOpacity(0.4),
         borderRadius: BorderRadius.circular(12),
       ),
       child: TextField(
